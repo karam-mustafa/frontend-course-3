@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+}
+
+.parent {
+  border: 5px solid red;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-top: 200px;
+}
+
+.parent div:nth-child(1){
+    border: 2px solid blue;
+    width: 100px;
+    height: 100px;
+
+}
