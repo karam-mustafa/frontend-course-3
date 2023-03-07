@@ -1,0 +1,39 @@
+body {
+  height: 2000px;
+}
+* {
+  margin: 0;
+}
+
+.parent {
+  display: flex;
+  border: 2px solid red;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+}
+.navbar {
+  background-color: #1f2f5f;
+  padding: 20px 5px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0px;
+}
+.link {
+  margin: 0 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+.child-div {
+  margin: 50px 0;
+  background-color: rgb(31, 47, 95);
+  width: 200px;
+  color: white;
+  height: 100px;
+  padding: 10px;
+}
