@@ -10,9 +10,8 @@
   margin-top: 200px;
 }
 
-.parent div:nth-child(1){
-    border: 2px solid blue;
-    width: 100px;
-    height: 100px;
-
+.parent :nth-child(2n + 1) {
+  border: 2px solid blue;
+  width: 100px;
+  height: 100px;
 }
