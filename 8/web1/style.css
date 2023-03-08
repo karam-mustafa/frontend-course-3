@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+}
+body{
+    height: 1000px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 10px 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.list {
+    display: flex;
+}
+.list li {
+    margin: 0 10px;
+    list-style: none;
+}
+.links-area , .brand {
+    margin: 0 50px;
+}
+
+.search input{
+    padding: 5px;
+    width: 250px;
+}
+
+.header {
+    width: 100vw;
+    height: 100vh;
+}
+
+.header img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 50px;
+}
+
+.cards .card-item {
+    border: 1px solid black;
+    width: 300px;
+}
+.cards .card-item img {
+    width: 100%;
+    padding: 0;
+}
+.cards .card-item .info {
+    padding: 10px;
+
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    line-height: 100px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
