@@ -4,6 +4,68 @@
     box-sizing: border-box;
 }
 
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 99vw;
+    height: 50px;
+}
+
+nav .logo{
+    margin-left: 20px;
+}
+
+nav .logo span{
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+nav .items{
+    display: flex;
+    gap: 50px;
+    margin-right: 20px;
+}
+
+nav .items a{
+    text-decoration: none;
+    color: black;
+}
+
+.hero{
+    max-width: 100vw;
+    height: 600px;
+    background-image: url('../img/photo_٢٠٢٣-٠٣-١٤_١٨-٥٠-٣٤.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .containt{
+    display: flex;
+    gap: 20px;
+}
+
+.hero .containt .first{
+    width: 115px;
+    height: 96px;
+    background-color: #55545c84;
+    color: white;
+    text-align: center;
+    font-size: 78px
+}
+
+.hero .containt .sec{
+    color: white;
+    text-align: center;
+    font-size: 78px
+}
 .projects , .about , .contact , .employees{
     padding: 0 20px;
     max-width: 100vw;
