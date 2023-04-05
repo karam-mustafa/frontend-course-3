@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head {
+            background-color: red;
+            color: white;
+        }
+
+        .new-style {
+            background-color: black;
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 onclick="toggleNewStyle(event)" class="head">Hello karam</h1>
+    <h1 onclick="toggleNewStyle(event)" class="head">Hello karam</h1>
+    <h1 onclick="toggleNewStyle(event)" class="head">Hello karam</h1>
+    <h1 onclick="toggleNewStyle(event)" class="head">Hello karam</h1>
+
+    <div onclick="toggleNewStyle(event)" class="head">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse dicta dolor totam quaerat, velit magni iure aspernatur inventore voluptate ipsam adipisci necessitatibus eius quas, distinctio laboriosam vero accusamus. Veritatis, iste.
+    </div>
+
+    <script>
+        // console.log('log');
+        // console.error('error');
+        // console.warn('warn');
+        // var str = 'karam';
+        // let str = 'karam';
+        // const str = 'karam';
+        // var karam = 'karam';
+        // function doElse(){
+        //     let str1 = 'karam';
+        // }
+        // function doSomething() {
+        //     let str2 = 'karam';
+        // }
+        // doSomething()
+
+        function removeNewStyle(event) {
+            event.target.classList.remove('new-style')
+        }
+
+        function toggleNewStyle(event) {
+            // if (event.target.classList.contains('new-style')) {
+            //     event.target.classList.remove('new-style')
+            // } else {
+            //     event.target.classList.add('new-style')
+            // }
+            event.target.classList.toggle('new-style')
+        }
+
+        setTimeout(() => {
+
+            const head = document.querySelectorAll('.head')
+
+            for (let index = 0; index < head.length; index++) {
+                head[index].classList.add('new-style')
+            }
+
+        }, 2000)
+
+    </script>
+</body>
+
+</html>
