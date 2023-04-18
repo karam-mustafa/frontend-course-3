@@ -59,8 +59,10 @@ async function fetchProducts() {
     .then((res) => res.json())
     .then((res) => (data = res.products));
 
-  data.forEach((item) => {
-    appendNewItemIntoTodo(item.title, item.description);
+  data.forEach((item,) => {
+    setTimeout(() => {
+      appendNewItemIntoTodo(item.title, item.description);
+    }, 3000);
   });
 }
 
