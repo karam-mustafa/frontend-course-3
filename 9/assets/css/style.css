@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 99vw;
+    height: 50px;
+}
+
+nav .logo{
+    margin-left: 20px;
+}
+
+nav .logo span{
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+nav .items{
+    display: flex;
+    gap: 50px;
+    margin-right: 20px;
+}
+
+nav .items a{
+    text-decoration: none;
+    color: black;
+}
+
+.hero{
+    max-width: 100vw;
+    height: 600px;
+    background-image: url('../img/photo_٢٠٢٣-٠٣-١٤_١٨-٥٠-٣٤.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .containt{
+    display: flex;
+    gap: 20px;
+}
+
+.hero .containt .first{
+    width: 115px;
+    height: 96px;
+    background-color: #55545c84;
+    color: white;
+    text-align: center;
+    font-size: 78px
+}
+
+.hero .containt .sec{
+    color: white;
+    text-align: center;
+    font-size: 78px
+}
+.projects , .about , .contact , .employees{
+    padding: 0 20px;
+    max-width: 100vw;
+}
+
+.projects h1 , .about h1 , .contact h1 , .employees h1{
+    padding: 10px 0;
+    border-bottom: 3px solid gray;
+    margin-bottom: 10px;
+}
+
+.projects .projects_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.projects .projects_container .card ,.employees .employees_container .card{
+    max-width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.projects .projects_container .card img{
+    width: 100%;
+}
+
+.projects .projects_container .card p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+.about p{
+    text-align: justify;
+    padding-top: 10px;
+}
+
+.contact form{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.contact input , .contact textarea{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.contact textarea{
+    height: 50px;
+}
+
+.contact .sub{
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 27px;
+}
+
+.employees{
+    margin-top: 50px;
+}
+
+.employees .employees_container .card{
+    position: static;
+}
+
+.employees .employees_container .card .img{
+    width: 100%;
+}
+
+.employees .employees_container .card .info{
+    width: 50%;
+}
+
+.employees_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+}
+
+.employees_container .card p{
+    padding-top: 10px;
+}
+
+.employees_container .card .job{
+    color: gray;
+}
+
+.employees_container .card button{
+    width: 80%;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+footer{
+    max-width: 100vw;
+    height: 50px;
+    background-color: black;
+    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    color: white;
+}
+
+footer span{
+    color: yellow;
+}
